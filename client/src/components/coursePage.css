@@ -1,0 +1,297 @@
+.addAnotherButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+#createOpenButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 30%;
+  height: 40%;
+  border-radius: 35px;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  background: white;
+}
+#createOpenButton:hover {
+  font-size: x-large;
+
+}
+.addCourse {
+  width: 0;
+  height: 0;
+  transition: width 0.5s, height 0.5s;
+}
+.CreateCourseForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95%;
+  height: 100%;
+  background-color: whitesmoke;
+  position: relative;
+  border-radius: 15px;
+}
+.nameTitleForm {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  height: 15%;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.classScheduleForm,
+.classroomNumberForm,
+.courseTeacherForm,
+.creditHoursForm,
+.tuitionCostForm,
+.maximumCapacityForm,
+.classDescriptionForm {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  height: 10%;
+  margin: 0;
+}
+.searchBar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  width: 100%;
+  height: 20%;
+}
+#searchBarDiv {
+  width: 80%;
+  height: 20%;
+  border-radius: 25px;
+  border: none;
+}
+.allCourses {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: 50%;
+}
+
+/*displayed courses*/
+.courseContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+.courseTag {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-evenly;
+  padding: 20px;
+  width: 300px;
+  height: 500px;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  position: relative;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.249);
+}
+.courseTag div input {
+  padding: 0;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+  right: 0;
+  top: 0;
+}
+#editButton,
+#deleteButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(103, 103, 103);
+  color: whitesmoke;
+}
+#editButton:hover,
+#deleteButton:hover {
+  background-color: black;
+  color: aliceblue;
+}
+
+#registerButton {
+  width: 50%;
+  height: 30px;
+  border-radius: 35px;
+  border: none;
+  background-color: rgb(103, 103, 103);
+  color: whitesmoke;
+}
+#registerButton:hover {
+  background-color: black;
+  color: aliceblue;
+}
+
+/*creat course form*/
+.createButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 13%;
+  margin: 0;
+}
+#cancelButtonForm,
+#saveButtonForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+  padding: 0;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(103, 103, 103);
+  color: whitesmoke;
+}
+#cancelButton:hover,
+#saveButton:hover {
+  background-color: black;
+  color: aliceblue;
+}
+.nameTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 20%;
+  padding: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+.classSchedule {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  width: auto;
+  height: auto;
+}
+.classroomNumber {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  width: auto;
+  height: auto;
+}
+.maximumCapacity {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  width: auto;
+  height: auto;
+}
+.courseTeacher {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  width: auto;
+  height: auto;
+}
+.creditHours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  width: auto;
+  height: auto;
+}
+.tuitionCost {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  width: auto;
+  height: auto;
+}
+.classDescription {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 20%;
+  max-width: "60%";
+}
+.classDescription p:last-child{
+  height: 100%;
+  overflow-y: scroll;
+}
+.registeredUsers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  width: auto;
+  height: auto;
+}
+
+.usersContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  background-color: bisque;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1170px) {
+  .usersContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-color: bisque;
+    z-index: 1;
+  }
+}

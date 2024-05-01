@@ -1,0 +1,144 @@
+.userProfileDiv {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 100%;
+  bottom: 0;
+  gap: 40px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+} 
+.widthFull {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+}
+/*User Profile info*/
+.registeredCourse {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+  width: 100%;
+}
+.registeredCourseTag {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+  height: 200px;
+  color: black;
+  background-color: white;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.249);
+  border-radius: 20px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+/* Right */
+.fistBox{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 100%;
+  color: black;
+  background-color: rgb(238, 238, 238);
+  box-shadow: -10px 0 9px rgba(255, 255, 255, 0.1);
+}
+.userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-direction: column;
+  width: 90%;
+  height: 40%;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.249);
+  background-color: rgb(166, 166, 166);
+}
+.innerInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+
+}
+.innerInfo p{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.saveButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 90%;
+  padding: 0;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(103, 103, 103);
+  color: whitesmoke;
+}
+
+
+/* Left */
+.secondBox{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  height: 100%;
+  color: black;
+  border-radius: 20px;
+}
+.welcome{
+  padding-top: 20px;
+}
+.welcome h1 {
+  color: transparent;
+  background: linear-gradient(
+    135deg,
+    rgba(16, 236, 255, 1) 0%,
+    rgba(229, 30, 230, 1) 100%
+  );
+  background-clip: text;
+  letter-spacing: 0px;
+  font-size: 400%;
+}
+.welcome h2 {
+  font-size: 40px;
+  color: rgb(18, 18, 18)
+}
+
+.enroledClasses{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  height: 100%;
+}

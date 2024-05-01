@@ -1,0 +1,16 @@
+{
+  "name": "capstone_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "v21.6.2"
+  },
+  "scripts": {
+    "build": "cd server && npm i && cd ../client && npm i && npm run build",
+    "start": "node server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

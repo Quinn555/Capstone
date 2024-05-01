@@ -1,0 +1,212 @@
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      45deg,
+      rgba(16, 236, 255, 1) 0%,
+      rgba(10, 45, 255, 0.6) 50%,
+      rgba(229, 30, 230, 1) 100%
+    ),
+    rgb(16, 236, 255);
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-family: "Archivo Narrow", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  transition: opacity 0.7s;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: #1a1a1a;
+}
+i {
+  color: #999;
+}
+.redText {
+  color: red;
+}
+.greenText {
+  color: green;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+input:focus {
+  outline: none;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+}
+a:hover {
+  color: rgb(49, 49, 49);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/*Basic Nav Components*/
+
+html,
+head,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.containerDiv {
+  background-color: rgb(244, 244, 244);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow-y: scroll;
+  width: 93%;
+  height: 100%;
+  transition: width ease-in 0.2s;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 1170px) {
+  .containerDiv {
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    width: 100%;
+    height: 90%;
+    transition: height ease-in 0.2s;
+    top: auto;
+    right: auto;
+    left: auto;
+  }
+  .widthFull{
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+  .full{
+    overflow-y:visible;
+  }
+  .enroledClasses{
+    height: 100%;
+  }
+  .fistBox{
+    width: 100%;
+    box-shadow: none;
+    background-color: whitesmoke;
+  }
+}
+
+.react-confirm-alert-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  height: 100%;
+}
+.react-confirm-alert-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 40%;
+  height: 25%;
+  padding: 0px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 75px rgba(255, 255, 255, 0.13);
+  color: #666;
+}
+.react-confirm-alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.react-confirm-alert h1 {
+  font-size: 40px;
+}
+.react-confirm-alert #text {
+  font-size: 100px;
+}
+.react-confirm-alert-button-group {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  height: 30%;
+}
+.react-confirm-alert-button-group button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 50%;
+  border-radius: 35px;
+}
+.toast-container {
+  z-index: 1;
+}
+.toast-success {
+  font-family: "Archivo Narrow", sans-serif;
+  background-color: #213547;
+}
+.toast-error {
+  font-family: "Archivo Narrow", sans-serif;
+  background-color: #994747;
+}

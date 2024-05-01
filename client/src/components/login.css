@@ -1,0 +1,225 @@
+.loginDiv{
+  width: 100%;
+  height: 100%;
+}
+
+/*header of page*/
+.topHeader{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+.topHeader h2{
+  display: flex;
+  align-items: center;
+  border-bottom: #000000 solid 3px;
+  width: 25%;
+}
+
+/* body of the form to login */
+.formContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 95%;
+}
+.formBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background-color: rgba(245, 245, 245);
+  z-index: 1;
+  width: 30%;
+  height: 90%;
+  transition: all linear 0.4s;
+}
+.formStructure{
+  width: 80%;
+  height: 35%;
+}
+.formRequirements{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 65%;
+}
+
+
+/*User Inputs*/
+.userInput{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #000000;
+  border-bottom: 2px solid #999;;
+  width: 100%;
+}
+.userInput input{
+  width: 100%;
+  border: none;
+  
+  color: #000000;
+  background-color: whitesmoke;
+  text-decoration-color: #ffffff;
+  outline: none;
+}
+
+.inputFormating{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.inputFormating input{
+  width: 100%;
+}
+i, input{
+  padding-bottom: 5px;
+}
+
+/* buttons on bottom of screen*/
+
+.loginButton {
+  width: 60%;
+  height: 48%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: white;
+  border-radius: 35px;
+  background: linear-gradient(135deg, rgba(16,236,255,1) 0%, rgba(229,30,230,1) 100%);
+  font-size: 18px;
+}
+
+.registerLink {
+  color: #000000;
+  font-size: 25px;
+  background: linear-gradient(135deg, rgba(16,236,255,1) 0%, rgba(229,30,230,1) 100%);
+  background-clip: text;
+  letter-spacing: 0px;
+}
+
+
+/*Buttons*/
+.navLoginSignUp{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  width: 100%;
+  height: 30%;
+}
+.signUp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+.smallText{
+  color: #999;
+}
+.signUp a{
+  height: 100%;
+}
+
+
+
+/*images*/
+.lilGuyContainer{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 27%;
+}
+.lilGuy{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.lock{
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/fullLogo.psd');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+
+
+/* screen sizing */
+
+@media screen and (max-width: 1170px) {
+  .formBox {
+    width: 90%;
+  }
+}
+@media screen and (max-height: 730px) {
+  .formBox {
+    height: 730px;
+  }
+}
+
+
+@media (hover: hover) {
+  /* when hover is supported */
+  .loginButton:hover{
+    font-size: x-large;
+  }
+  .registerLink:hover{
+    color: transparent;
+  }
+
+}
+
+/* block animation */
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: z-index, .7s, ease;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 80s linear infinite;
+    bottom: -600px;
+    
+}
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 5px;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(200deg);
+        opacity: 0;
+        border-radius: 20px;
+    }
+
+}

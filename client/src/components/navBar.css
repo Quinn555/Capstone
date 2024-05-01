@@ -1,0 +1,181 @@
+/*nav bar css*/
+.navBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  
+  
+  transition: height ease-in 0.2s;
+}
+nav {
+  height: 100%;
+  width: 7%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navListItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+}
+.logoContainer {
+  
+  
+  border: 0;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 10%;
+  background-image: url("./images/logo.png");
+}
+.logoContainerBig {
+  background-color: rgb(234, 234, 234);
+  border-radius: 50%;
+  border: 0;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/logo.png");
+}
+.hidden {
+  border-bottom-right-radius: 30px;
+  background-color: rgb(234, 234, 234);
+  border: 0;
+  width: 100%;
+  height: 10%;
+  transition: height ease-out 0.2s;
+}
+
+/* side Bar links */
+.links {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.links i {
+  color: #000000;
+  font-size: 25px;
+  background: linear-gradient(
+    135deg,
+    rgba(16, 236, 255, 1) 0%,
+    rgba(229, 30, 230, 1) 100%
+  );
+  background-clip: text;
+}
+
+.links h4 {
+  color: #000000;
+  background: linear-gradient(
+    135deg,
+    rgba(16, 236, 255, 1) 0%,
+    rgba(229, 30, 230, 1) 100%
+  );
+  background-clip: text;
+}
+
+.links:hover i,
+.links:hover h4 {
+  color: transparent;
+  transform: translateY(-5px);
+}
+@media screen and (max-width: 1170px) {
+  .navBar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: all linear 0.2s;
+    /* background-color: rgb(234, 234, 234); */
+  }
+  nav {
+    height: 10%;
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+  .navListItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+  }
+  .logoContainer {
+    border-radius: 0;
+    border-bottom-right-radius: 30px;
+    border: 0;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 100%;
+    background-image: url("./images/fullLogo.png");
+  }
+  .logoContainerBig {
+    border-radius: 50%;
+    border: 0;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/logo.png");
+  }
+  .hidden {
+    position: absolute;
+    border-bottom-right-radius: 30px;
+    background-color: rgb(234, 234, 234);
+    border: 0;
+    width: 10%;
+    height: 100%;
+    transition: height ease-out 0.3s;
+  }
+  .links {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+  }
+  .links i {
+    color: #000000;
+    font-size: 25px;
+    background: linear-gradient(
+      135deg,
+      rgba(16, 236, 255, 1) 0%,
+      rgba(229, 30, 230, 1) 100%
+    );
+    background-clip: text;
+  }
+
+  .links h4 {
+    color: #000000;
+    background: linear-gradient(
+      135deg,
+      rgba(16, 236, 255, 1) 0%,
+      rgba(229, 30, 230, 1) 100%
+    );
+    background-clip: text;
+    font-size: 15px;
+  }
+}
